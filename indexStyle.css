@@ -1,0 +1,130 @@
+@font-face{
+    font-family: Azonix;
+    src: url(Azonix.otf);
+}
+@font-face {
+    font-family: kayak;
+    src: url(Kayak\ Sans\ Regular.otf);
+}
+/*general body css */
+img {
+    width: 100%;
+    
+}
+h2 {
+    margin: 0 10px;
+    font-size: 28px;
+    margin-left: 0;
+}
+#aboutMe {
+    background-color: #cc2900;
+}
+p, h2, a, label {
+    font-family: kayak;
+}
+p, p a, label {
+    font-size: 18px;
+}
+p a {
+    color: #cc2900;
+}
+body {
+    margin: 0;
+    background-image: url(background.jpg);
+}
+/*Heading css*/
+header {
+    background-color:#cc2900;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: Azonix;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+header nav ul li {
+    list-style: none;
+    margin: 10px;
+}
+header nav ul li a {
+    color: black;
+    font-size: 20px;
+}
+header nav ul li a, a {
+    text-decoration: none;
+    
+}
+
+/*containers*/
+.item {
+    flex: 1;
+    margin: 10px;
+}
+.item-double {
+    flex: 2;
+}
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*form css*/
+form {
+    margin-top: 5px;
+}
+input, textarea {
+    width: 100%;
+}
+button {
+    font-size: 18px;
+    font-family: kayak;
+    margin-top: 5px;
+}
+
+
+
+/*CSS for Desktops and big screens*/
+@media all and (min-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    h1 {
+        margin: 10px 0 0 0;
+        padding: 10px;
+        font-size: 34px;
+    }
+    nav {
+        margin-top: 12px;
+    }
+    nav a {
+        font-size: 22px;
+    }
+}
+@media all and (min-width: 800px) {
+    .group {
+        flex-direction: row;
+    }
+    section {
+        padding: 0 10%;
+    }
+    .item-double {
+        margin-top: 32px;
+    }
+}
