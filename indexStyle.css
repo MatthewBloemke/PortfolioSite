@@ -12,14 +12,18 @@ img {
     
 }
 h2 {
-    margin: 0 10px;
-    font-size: 28px;
-    margin-left: 0;
+    margin: 10px 10px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+h3 {
+    font-size: 22px;
+    margin: 5px 0 5px;
 }
 #aboutMe {
     background-color: #cc2900;
 }
-p, h2, a, label {
+p, h2, a, label, h3 {
     font-family: kayak;
 }
 p, p a, label {
@@ -32,6 +36,13 @@ body {
     margin: 0;
     background-image: url(background.jpg);
 }
+iframe {
+    width: 100%;
+    height: 400px;
+}
+.projectDesc {
+    margin-top: 10px;
+}
 /*Heading css*/
 header {
     background-color:#cc2900;
@@ -43,6 +54,7 @@ header h1 {
     text-align: center;
     margin-bottom: 5px;
     font-family: Azonix;
+    font-size: 44px;
 }
 header nav {
     display: flex;
@@ -116,15 +128,25 @@ button {
     nav a {
         font-size: 22px;
     }
-}
-@media all and (min-width: 800px) {
+    header nav ul li a {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 38px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    p, p a, label {
+        font-size: 24px;
+    }
     .group {
         flex-direction: row;
     }
     section {
         padding: 0 10%;
     }
-    .item-double {
-        margin-top: 32px;
+    form {
+        margin-top: 21px;
     }
 }
